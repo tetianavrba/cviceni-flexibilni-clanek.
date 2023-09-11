@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -15,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-p, h2 {
+p,
+h2 {
   padding: 0;
 }
 
@@ -31,9 +34,27 @@ h2 {
   background: white;
 }
 
-.article__text, 
+.article__text,
 .article__image {
   padding: 1em;
 }
 
 /* Zde je místo pro vaše styly.*/
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.article__image {
+  flex: 1 1 40%;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.article__text {
+  flex: 1 1 60%;
+}
